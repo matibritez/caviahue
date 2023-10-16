@@ -19,7 +19,7 @@ h1 {
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     overflow: hidden;
 }
@@ -112,8 +112,6 @@ h1 {
     /* Espacio entre las tarjetas */
 }
 
-/* Estilos CSS para las tarjetas */
-/* Estilos CSS para las tarjetas */
 /* Estilos CSS para las tarjetas */
 .tarjeta {
     padding: 10px;

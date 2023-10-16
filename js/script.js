@@ -102,3 +102,48 @@ function scrollToTop() {
     });
 }
 
+const name=document.getElementById("name");
+const phone=document.getElementById("phone");
+const email=document.getElementById("email");
+const message=document.getElementById("message");
+const form=document.getElementById("form");
+const parrafo=document.getElementById("warnings");
+
+form.addEventListener('submit',e=>{
+    e.preventDefault();
+    checkinputs();
+});
+
+
+function checkinputs(){
+    const namevalue=name.nodevalue.trim();
+    const phonevalue=phone.nodevalue.trim();
+    const emailvalue=email.nodevalue.trim();
+    const message=message.nodevalue.trim();
+
+    if (namevalue===''){
+
+        seterrorfor(name,"No puede dejar el Apellido y nombre en blanco");
+    }else{
+        setsuccessfor(name);
+    }
+    if (phonevalue===''){
+
+        seterrorfor(phone,"No puede dejar el teléfono en blanco");
+    }else{
+        setsuccessfor(phone);
+    }
+}
+
+function seterrorfor(input,message){
+    const formcontrol=input.parentelement;
+    const small=formcontrol.queryselector('small');
+    formcontrol.classname='entrada-datos error';
+    small.innertext=message;
+}
+
+function setsuccessfor(input){
+    const formcontrol=input.parentelement;
+    formcontrol.classname='entrada-datos success';
+}   
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/estilos/reserva.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Registracion de Reserva</title>
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <img class="logo" src="/img/logo.png">
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a href="/index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#actividades" class="nav__link">Actividades</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./reserva.html" class="nav__link">Reservas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link">Contacto</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#preguntas" class="nav__link">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="/img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__close">
+                <img src="/img/close.svg" class="nav__icon">
+            </a>
+        </nav>
+
+    </header>
+    <section class="container-form">
+
+
+        <form action="#" class="form">
+
+            <div class="column">
+                <div class="input-field">
+                    <label>Apellido:</label>
+                    <input class="campo" type="text" placeholder="Ingrese su Apellido" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Nombre:</label>
+                    <input class="campo" type="text" placeholder="Ingrese su Nombre" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-field">
+                    <label>Teléfono de contacto:</label>
+                    <input class="campo" type="text" placeholder="Ingrese su Teléfono" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Email:</label>
+                    <input class="campo" type="email" placeholder="Ingrese su Mail" required>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="input-field">
+                    <label>Excursión:</label>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Seleccione la Excursión</option>
+                            <option>Excursión 1</option>
+                            <option>Excursión 2</option>
+                            <option>Excursión 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label>Fecha de inicio:</label>
+                    <input class="campo" type="date" required>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="input-field">
+                    <label> Tipo de Equipaje:</label>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Ingrese su Equipaje</option>
+                            <option>Bolso de mano</option>
+                            <option>Bolso de mano + Valija de mano</option>
+                            <option>Bolso de mano + Valija grande</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <label>Tipo de Facturación:</label>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Ingrese su Facturación</option>
+                            <option>Factura Tipo A</option>
+                            <option>Consumidor final</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button>Enviar</button>
+
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/groups/579171962539956" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/CopahueCaviahue" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/turismocaviahuecopahue/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <!-- Agrega más íconos y enlaces según sea necesario -->
+            </div>
+            <div class="footer-info">
+                <p>&copy; Caviahue, Neuquén</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/reserva.js"></script>
+</body>
+
+</html>
