@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Actividades en Caviahue, Neuquén</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Poppins:wght@300&family=Roboto:wght@100;300;400;500&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <img class="logo" src="./img/logo.png">
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#actividades" class="nav__link">Actividades</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#reservas" class="nav__link">Reservas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contacto" class="nav__link">Contacto</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#preguntas" class="nav__link">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="./img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__close">
+                <img src="./img/close.svg" class="nav__icon">
+            </a>
+        </nav>
+
+    </header>
+    <section id="actividades">
+        <h2>Actividades destacadas</h2>
+        <div id="tarjeta-container" class="grid-container">
+        </div>
+    </section>
+
+    <section id="como-llegar">
+        <h2>Cómo llegar</h2>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12598.308915158663!2d-71.05422195!3d-37.8701815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966d0469e95a4ce5%3A0xcd2f35b1590e28f0!2sCaviahue%2C%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1696296752287!5m2!1ses-419!2sar"
+                width="200" height="250" style="border:0;"  loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="experiencias">
+        <h2>Experiencias</h2>
+        <div class="exp-container" id="experiencias-container">
+            <!-- Las tarjetas se generarán dinámicamente aquí -->
+        
+        </div>
+    </div>
+        <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
+    
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/groups/579171962539956" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/CopahueCaviahue" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/turismocaviahuecopahue/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <!-- Agrega más íconos y enlaces según sea necesario -->
+            </div>
+            <div class="footer-info">
+                <p>&copy; Caviahue, Neuquén</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
