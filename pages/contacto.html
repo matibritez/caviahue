@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/estilos/contacto.css">
+    <!-- FontAwesome 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container" id="nav">
+            <img class="logo" src="/img/logo.png">
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#actividades" class="nav__link">Actividades</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./reserva.html" class="nav__link">Reservas</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./contacto.html" class="nav__link">Contacto</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#preguntas" class="nav__link">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+            <a href="#nav" class="nav__hamburguer">
+                <img src="/img/menu.svg" class="nav__icon">
+            </a>
+
+            <a href="#" class="nav__close">
+                <img src="/img/close.svg" class="nav__icon">
+            </a>
+        </nav>
+        
+    </header>
+
+    <div>
+        <img src="/img/Cavihaue6.jpg" class="banner" alt="inagen de Cavihaue6">
+        <h1>Contáctanos</h1>
+        <h3>Contanos como podemos ayudarte</h3>
+        <br>           
+      </div>
+    <form action="https://matiasbritez36@gmail.com" method="POST" autocomplete="off">
+        <h2>Contacto</h2>
+        
+        <div class="entrada-datos">
+
+            <input type="text" name="name" id="name" placeholder="Apellido y Nombre">
+               
+            <input type="tel" name="phone" id="phone" placeholder="Celular">
+            <input type="email" name="email" id="email" placeholder="Mail">
+            <textarea name="message" cols="30" rows="5" id="message" placeholder="Mensaje"></textarea>   
+            <input class="btn" type="submit" value="Enviar">
+
+            
+            <input type="hidden" name="_next"  value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha"  value="false">
+            
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-social">
+                <a href="https://www.facebook.com/groups/579171962539956" target="_blank"><i
+                        class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/CopahueCaviahue" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/turismocaviahuecopahue/" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                
+            </div>
+            <div class="footer-info">
+                <p>&copy; Caviahue, Neuquén</p>
+            </div>
+        </div>
+    </footer>
+<script src="validacion.js"></script>
+</body>
+</html>
