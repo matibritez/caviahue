@@ -55,22 +55,27 @@
         <h3>Contanos como podemos ayudarte</h3>
         <br>           
       </div>
-    <form action="https://matiasbritez36@gmail.com" method="POST" autocomplete="off">
+      <form action="https://matiasbritez36@gmail.com" method="POST" autocomplete="off" onsubmit="return validateForm()">
         <h2>Contacto</h2>
         
         <div class="entrada-datos">
 
             <input type="text" name="name" id="name" placeholder="Apellido y Nombre">
+            <span id="nameError" class="error"></span>
                
             <input type="tel" name="phone" id="phone" placeholder="Celular">
-            <input type="email" name="email" id="email" placeholder="Mail">
-            <textarea name="message" cols="30" rows="5" id="message" placeholder="Mensaje"></textarea>   
-            <input class="btn" type="submit" value="Enviar">
+            <span id="phoneError" class="error"></span>
 
+            <input type="email" name="email" id="email" placeholder="Email">
+            <span id="emailError" class="error"></span>
+
+            <textarea name="message" cols="30" rows="5" id="message" placeholder="Mensaje"></textarea>
+            <span id="messageError" class="error"></span>
             
-            <input type="hidden" name="_next"  value="http://127.0.0.1:5500/">
-            <input type="hidden" name="_captcha"  value="false">
+            <input class="btn" type="submit" value="Enviar">
             
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
         </div>
     </form>
     <footer class="footer">
@@ -88,6 +93,6 @@
             </div>
         </div>
     </footer>
-<script src="validacion.js"></script>
+<script src="/js/contacto.js"></script>
 </body>
 </html>

@@ -100,9 +100,8 @@ h1 {
 .banner{
     width: auto;
     height: 400px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    margin-left: 25%;
+    top: 0px;
 }
 
 form {
@@ -260,8 +259,9 @@ textarea {
     }
 
         .banner{
-            width: 100%;
+            width: 80%;
             height: 50%;
+            margin-left: 40px;
         }
 
     h3{
