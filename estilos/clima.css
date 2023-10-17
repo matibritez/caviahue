@@ -7,6 +7,7 @@
 
 body {
     background-color: #318CE7;
+    
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
     --state-hamburguer: scale(1);
     --state-menu: translate(-100%);
         
+    width: 100%;
     padding: 40px 0;
     display: grid;
     justify-content: space-between;
@@ -96,88 +98,45 @@ h1 {
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
-
-.banner{
-    width: auto;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
+.weather-content {
+    max-width: 100%;
+    margin: 50px auto;
+    background-color: #318CE7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
 }
 
-form {
-    position: relative;
-    max-width: 700px;
-    width: 100%;
-    border-radius: 6px;
-    padding: 25px;
-    border-radius: 8px;
-    margin: 50px auto; /* Ajusta el valor según sea necesario para centrar verticalmente */
-    background-color: #fff;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
-}
-
-form h2 {
+h1 {
     color: #333;
-    font-size: 1.5rem;
-    font-weight: 500;
 }
 
-input,
-textarea {
-    background-color: #fff;
-    padding: 20px 14px;
-    margin-top: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 15px;
-    color: #707070;
-}
-
-.entrada-datos {
+.result {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-::placeholder {
-    color: #707070;
-    font-size: 1rem;
+.card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #afcdea;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-:focus {
-    outline: 1px solid #318ce7;
+.card i {
+    font-size: 48px;
 }
 
-.btn {
-    background-color: #318ce7;
-    color: #fff;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #6aa9e9;
-}
-
-.form .entrada-datos input {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    color: #707070;
-    margin-top: 8px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-}
-
-.form .entrada-datos error {
-    visibility: visible;
-}
-
-.form .entrada-datos success {
-    visibility: visible;
+.card p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
 }
 
 /* FOOTER */
@@ -221,7 +180,6 @@ textarea {
 .fa:hover {
     color: #ffcc00;
 }
-
 
 /* Responsive Styles */
 
@@ -329,3 +287,16 @@ textarea {
     }
 }
 
+
+/* Añadir estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
