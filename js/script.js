@@ -146,4 +146,3 @@ function setsuccessfor(input){
     const formcontrol=input.parentelement;
     formcontrol.classname='entrada-datos success';
 }   
-

@@ -16,6 +16,16 @@ h1 {
 .logo {
     width: 180px;
 }
+#logo {
+    width: 180px; /* Ajusta el ancho según tu diseño */
+    height: auto; /* Mantiene la proporción original */
+    transition: transform 1s ease; /* Agrega una transición suave al cambio de transformación */
+}
+
+#logo:hover {
+    transform: scale(1.2) rotate(360deg); /* Escala y rota el logo al pasar el ratón por encima */
+}
+
 
 .container {
     margin: 0 auto;
@@ -173,6 +183,7 @@ h1 {
     /* Dos tarjetas por fila, ajustando el ancho */
     grid-gap: 20px;
     /* Espaciado entre las tarjetas */
+    
 }
 
 .card {
