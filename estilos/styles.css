@@ -40,12 +40,14 @@ h1 {
     --state-close: scale(0);
     --state-hamburguer: scale(1);
     --state-menu: translate(-100%);
+   
 
     padding: 40px 0;
     display: grid;
     justify-content: space-between;
     align-items: center;
     grid-template-columns: repeat(2, max-content);
+    
 }
 
 .nav:target {
@@ -144,6 +146,10 @@ h1 {
     margin: 15px;
 }
 .tarjeta:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.tarjeta:hover p {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
@@ -269,6 +275,7 @@ h1 {
         --state-menu: translate(0);
         background-color: #6aa9e9;
         ;
+        z-index: 2;
     }
 
     .nav:target {
@@ -293,6 +300,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .nav{
+        z-index: 3;
+    }
+
     .nav__hamburguer{
         display: flex;
     }
@@ -301,8 +312,16 @@ h1 {
     }
 
     .grid-container {
+        margin-top: 60px;
         grid-template-columns: 1fr;
         /* Una tarjeta por fila en pantallas más pequeñas */
+    }
+    .tarjeta {
+        margin-top: 60px; /* Ajusta el valor según sea necesario */
+    }
+
+    .tarjeta img {
+        margin-top: 0; /* Reinicia el margen superior para las imágenes */
     }
 
     #map iframe {
