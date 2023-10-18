@@ -282,4 +282,15 @@ h1 {
     .nav__hamburguer{
         display: flex;
     }
+
+    .footer-social {
+        text-align: center;
+        font-size: large;
+        /* Alinea los íconos sociales al centro en pantallas pequeñas */
+    }
+
+    .footer-info {
+        text-align: center;
+        /* Alinea el texto al centro en pantallas pequeñas */
+    }
 }
